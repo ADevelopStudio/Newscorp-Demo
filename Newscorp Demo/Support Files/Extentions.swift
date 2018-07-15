@@ -45,13 +45,15 @@ extension UIBarButtonItem {
 
 extension UIView {
     func bumpAnimation(for result: Question.Result, completion: @escaping ()->()) {
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: 0.15, animations: {
             self.backgroundColor = result.buttonColor
             self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }) { _  in
-            UIView.animate(withDuration: 0.3, animations:{
+            UIView.animate(withDuration: 0.15, animations:{
                 self.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }) { _ in completion()}
+            }) { _ in
+                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(150), execute: {completion()})
+            }
         }
     }
     
