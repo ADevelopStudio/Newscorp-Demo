@@ -2,7 +2,7 @@
 
 by _Dmitrii Zverev_. 15 July 2018
 
-<h2>'Gameifying' some news content.</h2>
+<h2>'Game-ifying' some news content.</h2>
 
  **We need the game to display every question from the json feed, in order (for player equality), until the user completes all questions. NOTE: there should be no repetition (In reality this feed would be updated daily).**
  
