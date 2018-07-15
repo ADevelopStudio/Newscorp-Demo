@@ -24,9 +24,9 @@ by _Dmitrii Zverev_. 15 July 2018
 - [x] complete section.
 
 
-<h2>Personal challenges:</h2>
+<h2> </h2>
 
- **In this challenge, I demonstrated that I know how to use:**
+ **In this challenge, I demonstrated my abilities to use:**
  
 - structs
 - optional 
