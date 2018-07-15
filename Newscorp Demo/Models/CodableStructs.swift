@@ -7,42 +7,28 @@
 //
 
 import Foundation
-
-
-struct GameProgress: Codable {
-    var productVersion: Int = 0
-    var currentScore: Int = 0
-    var currentQuestionNumber: Int = -1
-    
-    init?(gameVersion: Int?) {
-        guard let gameVersion = gameVersion else {return nil}
-        guard let savedData = UserDefaults.standard.object(forKey: "SavedResult\(gameVersion)") as? GameProgress else {return}
-        self = savedData
-    }
-    init?(_ gameData: GameData?) {
-        self.init(gameVersion: gameData?.version)
-    }
-    
-    func save() {
-        UserDefaults.standard.set(self, forKey: "SavedResult\(self.productVersion)")
-    }
-}
-
+import UIKit
 
 struct GameData: Codable {
     var product: String
     var resultSize: Int
     var version: Int
     var items: [Question]
-    
-    func nextQuestion(after index: Int) -> Question? {
-        return items[safe: 2]
-    }
 }
 
 struct Question: Codable {
     enum Result {
         case won, lost, skipped
+        var buttonColor: UIColor {
+            switch self {
+            case .lost:
+                return .red
+            case .won:
+                return .green
+            case .skipped:
+                return .white
+            }
+        }
     }
     var correctAnswerIndex: Int
     var imageUrl: String

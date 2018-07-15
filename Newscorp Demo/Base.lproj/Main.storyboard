@@ -20,19 +20,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-55-0zW" customClass="AnswersStackView" customModule="Newscorp_Demo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="384" width="343" height="267"/>
+                                <rect key="frame" x="16" y="451" width="343" height="200"/>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wF-l6-7Ta">
+                                <rect key="frame" x="0.0" y="64" width="375" height="227"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh7-M5-Fpw">
+                                <rect key="frame" x="16" y="301" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="sDW-bf-eGZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN0-mn-rTY">
+                                <rect key="frame" x="16" y="411" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EIM-kQ-ZT5"/>
+                                </constraints>
+                                <state key="normal" title="Read the article →  "/>
+                                <connections>
+                                    <action selector="showArticlePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TeG-b6-Ehj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6wF-l6-7Ta" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ec-vM-RYQ"/>
+                            <constraint firstItem="6wF-l6-7Ta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6OV-uh-g53"/>
                             <constraint firstItem="k7V-55-0zW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="Di6-j4-eKg"/>
+                            <constraint firstItem="6wF-l6-7Ta" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FTQ-Yl-AM8"/>
+                            <constraint firstItem="gN0-mn-rTY" firstAttribute="leading" secondItem="k7V-55-0zW" secondAttribute="leading" id="GhV-Hk-uqm"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="leading" secondItem="Wh7-M5-Fpw" secondAttribute="leading" id="O20-XH-r7S"/>
                             <constraint firstItem="k7V-55-0zW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SEQ-CG-68b"/>
                             <constraint firstItem="k7V-55-0zW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-16" id="YTw-TY-X1Q"/>
-                            <constraint firstItem="k7V-55-0zW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="fL7-ne-QWj"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="fL7-ne-QWj"/>
+                            <constraint firstItem="Wh7-M5-Fpw" firstAttribute="top" secondItem="6wF-l6-7Ta" secondAttribute="bottom" constant="10" id="i9z-fa-zPS"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="trailing" secondItem="Wh7-M5-Fpw" secondAttribute="trailing" id="ngm-bS-3FI"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="top" secondItem="gN0-mn-rTY" secondAttribute="bottom" id="qpJ-Oy-CZq"/>
+                            <constraint firstItem="gN0-mn-rTY" firstAttribute="trailing" secondItem="k7V-55-0zW" secondAttribute="trailing" id="z1s-py-5w0"/>
+                            <constraint firstItem="gN0-mn-rTY" firstAttribute="top" secondItem="Wh7-M5-Fpw" secondAttribute="bottom" constant="10" id="zwM-51-Vaz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="AZV-ku-IdE">
+                        <barButtonItem key="leftBarButtonItem" title="progress" id="aFU-bf-tBZ">
+                            <connections>
+                                <action selector="progressPressed:" destination="BYZ-38-t0r" id="8GO-sa-UH1"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Result: 0" id="EZW-wo-05q">
                             <connections>
                                 <action selector="resultPressed:" destination="BYZ-38-t0r" id="ov5-ZR-Oop"/>
@@ -41,7 +78,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answersStackView" destination="k7V-55-0zW" id="3tP-aS-dDd"/>
+                        <outlet property="articleImageview" destination="6wF-l6-7Ta" id="sNA-lq-Dje"/>
+                        <outlet property="progressBtn" destination="aFU-bf-tBZ" id="ceF-AW-BPO"/>
                         <outlet property="resultBtn" destination="EZW-wo-05q" id="Dj2-jI-F0V"/>
+                        <outlet property="standfirstLabel" destination="Wh7-M5-Fpw" id="gqW-fo-K3F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

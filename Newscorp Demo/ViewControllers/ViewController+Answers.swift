@@ -9,14 +9,9 @@
 import Foundation
 import UIKit
 extension ViewController: AnswersStackViewDelegate {
-    func playerAnswered(question:  Question, with result: Question.Result){
-        switch result {
-        case .won:
-            break
-        case .lost:
-            break
-        case .skipped:
-            break
-        }
+    func playerAnswered(with result: Question.Result){
+        database?.progress.update(with: result)
+        self.updateProgressLabels()
+        self.displayNextQuestion()
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AnswersStackViewDelegate: class{
-    func playerAnswered(question:  Question, with result: Question.Result)
+    func playerAnswered(with result: Question.Result)
 }
 
 class AnswersStackView: UIStackView {
@@ -22,11 +22,12 @@ class AnswersStackView: UIStackView {
     
     func createBtn(title: String, index: Int) -> UIView {
         let label = UILabel(frame: .zero)
-        label.numberOfLines = 0
+        label.numberOfLines = 2
+        label.minimumScaleFactor = 0.5
         label.textAlignment = .center
         label.text = title
         label.tag = index
-        label.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        label.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
         label.setRoundCorners()
         label.backgroundColor = .white
         label.isUserInteractionEnabled = true
@@ -47,6 +48,8 @@ class AnswersStackView: UIStackView {
     
     @objc func optionChoosen(tap: UITapGestureRecognizer)  {
         guard let index = tap.view?.tag, let question = question else {return}
-        delegate?.playerAnswered(question: question, with: question.result(for: index))
+        let result = question.result(for: index)
+        UIImpactFeedbackGenerator().impactOccurred()
+        tap.view?.bumpAnimation(for: result, completion: {self.delegate?.playerAnswered(with: result)})
     }
 }

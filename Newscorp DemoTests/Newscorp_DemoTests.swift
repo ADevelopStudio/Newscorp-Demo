@@ -10,27 +10,25 @@ import XCTest
 @testable import Newscorp_Demo
 
 class Newscorp_DemoTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testGameProgressMethods() {
+        let gameData = GameData(product: "For testing", resultSize: 10, version: -10, items: [])
+        var gameProgress = GameProgress(gameData)
+        gameProgress.clear()
+        gameProgress.update(with: .won)
+        XCTAssertEqual(gameProgress.currentScore, 1)
+        gameProgress.update(with: .skipped)
+        XCTAssertEqual(gameProgress.currentScore, 1)
+        gameProgress.update(with: .lost)
+        XCTAssertEqual(gameProgress.currentScore, 0)
+        gameProgress.update(with: .lost)
+        XCTAssertEqual(gameProgress.currentScore, -1)
+
+        let loadedProgress = GameProgress(gameData)
+        XCTAssertEqual(loadedProgress.currentScore, gameProgress.currentScore)
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testLoadingAndDecodingJson()  {
+        XCTAssertNotNil(Database(jsonFileName: "game"))
     }
     
 }
