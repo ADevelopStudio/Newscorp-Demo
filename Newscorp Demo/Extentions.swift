@@ -9,6 +9,13 @@
 import Foundation
 import UIKit
 
+extension Collection {
+        /// Returns the element at the specified index iff it is within bounds, otherwise nil.
+    subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+}
+
 extension UIView {
     func bumpAnimation() {
         UIView.animate(withDuration: 0.1, animations: {
@@ -18,6 +25,12 @@ extension UIView {
                 self.transform = CGAffineTransform(scaleX: 1, y: 1)
             }
         }
+    }
+    func setRoundCorners()  {
+        self.layer.cornerRadius = 7
+        self.layer.borderWidth = 0
+        self.layer.borderColor = UIColor.clear.cgColor
+        self.clipsToBounds = true
     }
 }
 extension UIControl {

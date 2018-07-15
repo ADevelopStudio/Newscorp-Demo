@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,16 +18,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="k7V-55-0zW" customClass="AnswersStackView" customModule="Newscorp_Demo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="384" width="343" height="267"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="Di6-j4-eKg"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SEQ-CG-68b"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-16" id="YTw-TY-X1Q"/>
+                            <constraint firstItem="k7V-55-0zW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="fL7-ne-QWj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="AZV-ku-IdE">
-                        <barButtonItem key="rightBarButtonItem" title="Result: 0" id="EZW-wo-05q"/>
+                        <barButtonItem key="rightBarButtonItem" title="Result: 0" id="EZW-wo-05q">
+                            <connections>
+                                <action selector="resultPressed:" destination="BYZ-38-t0r" id="ov5-ZR-Oop"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answersStackView" destination="k7V-55-0zW" id="3tP-aS-dDd"/>
+                        <outlet property="resultBtn" destination="EZW-wo-05q" id="Dj2-jI-F0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-564"/>
+            <point key="canvasLocation" x="893.60000000000002" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qBO-JH-FMM">
