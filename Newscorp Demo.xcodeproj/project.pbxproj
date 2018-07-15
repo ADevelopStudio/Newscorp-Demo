@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		625EE1B220FAD14100A55A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1B120FAD14100A55A3A /* AppDelegate.swift */; };
+		625EE1B420FAD14100A55A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1B320FAD14100A55A3A /* ViewController.swift */; };
+		625EE1B720FAD14100A55A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625EE1B520FAD14100A55A3A /* Main.storyboard */; };
+		625EE1B920FAD14200A55A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625EE1B820FAD14200A55A3A /* Assets.xcassets */; };
+		625EE1BC20FAD14200A55A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625EE1BA20FAD14200A55A3A /* LaunchScreen.storyboard */; };
+		625EE1C720FAD14200A55A3A /* Newscorp_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1C620FAD14200A55A3A /* Newscorp_DemoTests.swift */; };
+		625EE1D220FAD18E00A55A3A /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1D120FAD18E00A55A3A /* Structs.swift */; };
+		625EE1D520FAD28E00A55A3A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1D420FAD28E00A55A3A /* Extentions.swift */; };
+		625EE1D820FAD31900A55A3A /* game.json in Resources */ = {isa = PBXBuildFile; fileRef = 625EE1D720FAD31900A55A3A /* game.json */; };
+		625EE1DA20FAD33B00A55A3A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625EE1D920FAD33B00A55A3A /* Database.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		625EE1C320FAD14200A55A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 625EE1A620FAD14100A55A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 625EE1AD20FAD14100A55A3A;
+			remoteInfo = "Newscorp Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		625EE1AE20FAD14100A55A3A /* Newscorp Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newscorp Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		625EE1B120FAD14100A55A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		625EE1B320FAD14100A55A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		625EE1B620FAD14100A55A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		625EE1B820FAD14200A55A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		625EE1BB20FAD14200A55A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		625EE1BD20FAD14200A55A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625EE1C220FAD14200A55A3A /* Newscorp DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Newscorp DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		625EE1C620FAD14200A55A3A /* Newscorp_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Newscorp_DemoTests.swift; sourceTree = "<group>"; };
+		625EE1C820FAD14200A55A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625EE1D120FAD18E00A55A3A /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		625EE1D420FAD28E00A55A3A /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		625EE1D720FAD31900A55A3A /* game.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game.json; sourceTree = "<group>"; };
+		625EE1D920FAD33B00A55A3A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		625EE1AB20FAD14100A55A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625EE1BF20FAD14200A55A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		625EE1A520FAD14100A55A3A = {
+			isa = PBXGroup;
+			children = (
+				625EE1B020FAD14100A55A3A /* Newscorp Demo */,
+				625EE1C520FAD14200A55A3A /* Newscorp DemoTests */,
+				625EE1AF20FAD14100A55A3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		625EE1AF20FAD14100A55A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				625EE1AE20FAD14100A55A3A /* Newscorp Demo.app */,
+				625EE1C220FAD14200A55A3A /* Newscorp DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		625EE1B020FAD14100A55A3A /* Newscorp Demo */ = {
+			isa = PBXGroup;
+			children = (
+				625EE1D620FAD30C00A55A3A /* Resources */,
+				625EE1D320FAD25C00A55A3A /* Models */,
+				625EE1B120FAD14100A55A3A /* AppDelegate.swift */,
+				625EE1D920FAD33B00A55A3A /* Database.swift */,
+				625EE1B320FAD14100A55A3A /* ViewController.swift */,
+				625EE1D420FAD28E00A55A3A /* Extentions.swift */,
+				625EE1B520FAD14100A55A3A /* Main.storyboard */,
+				625EE1B820FAD14200A55A3A /* Assets.xcassets */,
+				625EE1BA20FAD14200A55A3A /* LaunchScreen.storyboard */,
+				625EE1BD20FAD14200A55A3A /* Info.plist */,
+			);
+			path = "Newscorp Demo";
+			sourceTree = "<group>";
+		};
+		625EE1C520FAD14200A55A3A /* Newscorp DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				625EE1C620FAD14200A55A3A /* Newscorp_DemoTests.swift */,
+				625EE1C820FAD14200A55A3A /* Info.plist */,
+			);
+			path = "Newscorp DemoTests";
+			sourceTree = "<group>";
+		};
+		625EE1D320FAD25C00A55A3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				625EE1D120FAD18E00A55A3A /* Structs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		625EE1D620FAD30C00A55A3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				625EE1D720FAD31900A55A3A /* game.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		625EE1AD20FAD14100A55A3A /* Newscorp Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625EE1CB20FAD14200A55A3A /* Build configuration list for PBXNativeTarget "Newscorp Demo" */;
+			buildPhases = (
+				625EE1AA20FAD14100A55A3A /* Sources */,
+				625EE1AB20FAD14100A55A3A /* Frameworks */,
+				625EE1AC20FAD14100A55A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Newscorp Demo";
+			productName = "Newscorp Demo";
+			productReference = 625EE1AE20FAD14100A55A3A /* Newscorp Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		625EE1C120FAD14200A55A3A /* Newscorp DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625EE1CE20FAD14200A55A3A /* Build configuration list for PBXNativeTarget "Newscorp DemoTests" */;
+			buildPhases = (
+				625EE1BE20FAD14200A55A3A /* Sources */,
+				625EE1BF20FAD14200A55A3A /* Frameworks */,
+				625EE1C020FAD14200A55A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				625EE1C420FAD14200A55A3A /* PBXTargetDependency */,
+			);
+			name = "Newscorp DemoTests";
+			productName = "Newscorp DemoTests";
+			productReference = 625EE1C220FAD14200A55A3A /* Newscorp DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		625EE1A620FAD14100A55A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Dmitrii Zverev";
+				TargetAttributes = {
+					625EE1AD20FAD14100A55A3A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					625EE1C120FAD14200A55A3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 625EE1AD20FAD14100A55A3A;
+					};
+				};
+			};
+			buildConfigurationList = 625EE1A920FAD14100A55A3A /* Build configuration list for PBXProject "Newscorp Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 625EE1A520FAD14100A55A3A;
+			productRefGroup = 625EE1AF20FAD14100A55A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				625EE1AD20FAD14100A55A3A /* Newscorp Demo */,
+				625EE1C120FAD14200A55A3A /* Newscorp DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		625EE1AC20FAD14100A55A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625EE1BC20FAD14200A55A3A /* LaunchScreen.storyboard in Resources */,
+				625EE1B920FAD14200A55A3A /* Assets.xcassets in Resources */,
+				625EE1B720FAD14100A55A3A /* Main.storyboard in Resources */,
+				625EE1D820FAD31900A55A3A /* game.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625EE1C020FAD14200A55A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		625EE1AA20FAD14100A55A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625EE1D520FAD28E00A55A3A /* Extentions.swift in Sources */,
+				625EE1D220FAD18E00A55A3A /* Structs.swift in Sources */,
+				625EE1B420FAD14100A55A3A /* ViewController.swift in Sources */,
+				625EE1DA20FAD33B00A55A3A /* Database.swift in Sources */,
+				625EE1B220FAD14100A55A3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625EE1BE20FAD14200A55A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625EE1C720FAD14200A55A3A /* Newscorp_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		625EE1C420FAD14200A55A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 625EE1AD20FAD14100A55A3A /* Newscorp Demo */;
+			targetProxy = 625EE1C320FAD14200A55A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		625EE1B520FAD14100A55A3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625EE1B620FAD14100A55A3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		625EE1BA20FAD14200A55A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625EE1BB20FAD14200A55A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		625EE1C920FAD14200A55A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		625EE1CA20FAD14200A55A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		625EE1CC20FAD14200A55A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QX9SH777P;
+				INFOPLIST_FILE = "Newscorp Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.makemeapp.Newscorp-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		625EE1CD20FAD14200A55A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QX9SH777P;
+				INFOPLIST_FILE = "Newscorp Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.makemeapp.Newscorp-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		625EE1CF20FAD14200A55A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QX9SH777P;
+				INFOPLIST_FILE = "Newscorp DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.makemeapp.Newscorp-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newscorp Demo.app/Newscorp Demo";
+			};
+			name = Debug;
+		};
+		625EE1D020FAD14200A55A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2QX9SH777P;
+				INFOPLIST_FILE = "Newscorp DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.makemeapp.Newscorp-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newscorp Demo.app/Newscorp Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		625EE1A920FAD14100A55A3A /* Build configuration list for PBXProject "Newscorp Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625EE1C920FAD14200A55A3A /* Debug */,
+				625EE1CA20FAD14200A55A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625EE1CB20FAD14200A55A3A /* Build configuration list for PBXNativeTarget "Newscorp Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625EE1CC20FAD14200A55A3A /* Debug */,
+				625EE1CD20FAD14200A55A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625EE1CE20FAD14200A55A3A /* Build configuration list for PBXNativeTarget "Newscorp DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625EE1CF20FAD14200A55A3A /* Debug */,
+				625EE1D020FAD14200A55A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 625EE1A620FAD14100A55A3A /* Project object */;
+}
